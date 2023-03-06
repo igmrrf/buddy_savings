@@ -26,6 +26,6 @@ inviteRouter.put(
 
 inviteRouter.get('/id/:inviteId', auth, inviteController.viewInvite);
 inviteRouter.get('/sent', auth, inviteController.viewAllSentInvites);
-inviteRouter.get('/recieved', auth, inviteController.viewAllRecievedInvites);
+inviteRouter.get('/received', auth, inviteController.viewAllReceivedInvites);
 
 export default inviteRouter;

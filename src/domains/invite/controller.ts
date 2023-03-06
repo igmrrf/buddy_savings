@@ -68,7 +68,7 @@ export default class InviteController implements IInvitesController {
     }
   };
 
-  viewAllRecievedInvites = async (req: AuthRequest, res: Response) => {
+  viewAllReceivedInvites = async (req: AuthRequest, res: Response) => {
     try {
       const invite = await this.inviteService.fetchInvites({
         where: { inviteeId: req?.id },

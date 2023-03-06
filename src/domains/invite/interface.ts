@@ -13,19 +13,13 @@ export interface ISavingModel extends IBaseModel {
 }
 
 export interface IInvitesController {
-  sendInvite: (
-    req: Request,
-    res: Response
-  ) => Promise<Response<IBaseResponse>>;
-  viewInvite: (
-    req: Request,
-    res: Response
-  ) => Promise<Response<IBaseResponse>>;
+  sendInvite: (req: Request, res: Response) => Promise<Response<IBaseResponse>>;
+  viewInvite: (req: Request, res: Response) => Promise<Response<IBaseResponse>>;
   respondToInvite: (
     req: Request,
     res: Response
   ) => Promise<Response<IBaseResponse>>;
-  viewAllRecievedInvites: (
+  viewAllReceivedInvites: (
     req: Request,
     res: Response
   ) => Promise<Response<IBaseResponse>>;
