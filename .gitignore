@@ -1,0 +1,11 @@
+# Node Artifact Files
+node_modules/
+dist/
+coverage/
+
+# OS generated
+.DS.Store
+.npmrc
+.vscode/
+
+# yarn.lock is left behind
